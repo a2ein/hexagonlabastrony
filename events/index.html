@@ -19,7 +19,7 @@
     </header>
     
     <section id="events">
-        <h2>Upcoming Events</h2>
+        <h2>EVENTS</h2>
         <div id="events-list">
             <!-- Events will be populated here by JavaScript -->
         </div>
@@ -38,6 +38,17 @@
     <footer>
         <p>&copy; 2024 Astronomical Events. All rights reserved.</p>
     </footer>
+    
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-date"></p>
+            <p id="modal-description"></p>
+            <div id="model-viewer"></div> <!-- Container for 3D model -->
+        </div>
+    </div>
     
     <script src="scripts.js"></script>
 </body>

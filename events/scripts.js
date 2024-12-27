@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const events = [
-        { name: 'Eclipse', date: '2024-04-15', description: 'Types of solar eclipses: Total, Partial, Annular, Hybrid. Types of lunar eclipses: Total, Partial, Penumbral.', modelUrl: 'https://www.youtube.com/embed/cxrLRbkOwKs' },
+        { name: 'Eclipse', date: '2024-04-15', description: 'Types of /n  solar eclipses: Total, Partial, Annular, Hybrid. Types of lunar eclipses: Total, Partial, Penumbral.', modelUrl: 'https://www.youtube.com/embed/cxrLRbkOwKs' },
         { name: 'Meteor Shower', date: '2024-05-10', description: 'The annual meteor shower will reach its peak tonight.', modelUrl: 'path_to_meteor_shower_model' },
         { name: 'Comet', date: '2024-06-20', description: 'A comet will be visible from certain regions.', modelUrl: 'path_to_comet_model' },
         { name: 'Planetary Alignment', date: '2024-06-20', description: 'Multiple planets will align.', modelUrl: 'path_to_planetary_alignment_model' },

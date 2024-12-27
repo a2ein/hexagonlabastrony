@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <h3>${event.name}</h3>
             <p>Date: ${event.date}</p>
             <button onclick="showEventDetails('${event.name}', '${event.date}', '${event.description}', '${event.modelUrl}')">View Details</button>
-            <a href='${event.modelUrl}'>link here</a>
+               <button onclick="showEventDetails('${event.name}', '${event.date}', '${event.description}', '${event.modelUrl}')">Classification</button>
+
+         <button onclick="showEventDetails('${event.name}', '${event.date}', '${event.description}', '${event.modelUrl}')">VISUAL REPRESENTATION</button>
         `;
         eventsList.appendChild(eventItem);
     });

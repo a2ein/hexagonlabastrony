@@ -1,58 +1,68 @@
-/* slider.css */
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-image: url('https://i.gifer.com/origin/c9/c95a89234c8848512f875201135c950d.gif');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    line-height: 1.6;
 }
 
-.slider {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide img {
+body::before {
+    content: "";
+    background-image: url('https://i.gifer.com/origin/c9/c95a89234c8848512f875201135c950d.gif');
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    border-radius: 10px;
+    height: 100%;
+    z-index: -1;
 }
 
-button.prev, button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+header, footer, section {
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    z-index: 1;
 }
 
-button.prev {
-    left: 10px;
+header {
+    text-align: center;
 }
 
-button.next {
-    right: 10px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-button.prev:hover, button.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+p {
+    text-align: justify;
+    color: #ddd;
+    margin-bottom: 20px;
 }

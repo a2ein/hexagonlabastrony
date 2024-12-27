@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const events = [
-        { name: 'Eclipse', date: '2024-04-15', description: 'Types of solar eclipses: Total, Partial, Annular, Hybrid. Types of lunar eclipses: Total, Partial, Penumbral.', modelUrl: 'https://images.unsplash.com/photo-1503862242163-608ef852091d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+        { name: 'Eclipse', date: '2024-04-15', description: 'Types of solar eclipses: Total, Partial, Annular, Hybrid. Types of lunar eclipses: Total, Partial, Penumbral.', modelUrl: 'https://www.youtube.com/embed/cxrLRbkOwKs' },
         { name: 'Meteor Shower', date: '2024-05-10', description: 'The annual meteor shower will reach its peak tonight.', modelUrl: 'path_to_meteor_shower_model' },
         { name: 'Comet', date: '2024-06-20', description: 'A comet will be visible from certain regions.', modelUrl: 'path_to_comet_model' },
         { name: 'Planetary Alignment', date: '2024-06-20', description: 'Multiple planets will align.', modelUrl: 'path_to_planetary_alignment_model' },
@@ -51,7 +51,7 @@ function showEventDetails(name, date, description, modelUrl) {
     modalDescription.innerText = description;
 
     // Display the model using iframe or other method
-    modelViewer.innerHTML = `<iframe src="${modelUrl}" width="100%" height="250px"></iframe>`;
+    modelViewer.innerHTML = `<iframe src="${modelUrl}" width="100%" height="240px"></iframe>`;
     
     modal.style.display = 'block';
 }

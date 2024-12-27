@@ -9,13 +9,25 @@
 <body>
     <header>
         <h1>Astronomical Events Visualization</h1>
-        <nav>
+        <!-- <nav>
             <ul>
                 <li><a href="#events">Events</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </nav> -->
+        
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-date"></p>
+            <p id="modal-description"></p>
+            <div id="model-viewer"></div> <!-- Container for 3D model -->
+        </div>
+    </div>
+    
     </header>
     
     <section id="events">
@@ -38,17 +50,6 @@
     <footer>
         <p>&copy; 2024 HEXAGONLAB24. All rights reserved.</p>
     </footer>
-    
-    <!-- Modal Structure -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-date"></p>
-            <p id="modal-description"></p>
-            <div id="model-viewer"></div> <!-- Container for 3D model -->
-        </div>
-    </div>
     
     <script src="scripts.js"></script>
 </body>

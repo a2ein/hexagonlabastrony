@@ -1,9 +1,10 @@
-// scripts.js
 document.addEventListener('DOMContentLoaded', () => {
     const events = [
-        { name: ' Eclipse', date: '2024-04-15', description: 'types of solar eclipses: Total Partial Annular Hybrid  |lunar eclipses: Total Partial Penumbral', modelUrl: 'https://media2.giphy.com/media/FKwnnTY9xZGQoWqcTH/200w.gif?cid=6c09b9529xvbl2xi0gkgkwolxplwc36lcwoj5v5663dyp6d5&ep=v1_videos_search&rid=200w.gif&ct=v' },
+        { name: 'Eclipse', date: '2024-04-15', description: 'Types of solar eclipses: Total, Partial, Annular, Hybrid. Types of lunar eclipses: Total, Partial, Penumbral.', modelUrl: 'https://media2.giphy.com/media/FKwnnTY9xZGQoWqcTH/200w.gif?cid=6c09b9529xvbl2xi0gkgkwolxplwc36lcwoj5v5663dyp6d5&ep=v1_videos_search&rid=200w.gif&ct=v' },
         { name: 'Meteor Shower', date: '2024-05-10', description: 'The annual meteor shower will reach its peak tonight.', modelUrl: 'path_to_meteor_shower_model' },
-        { name: 'Comet', date: '2024-06-20', description: 'A solar eclipse will be visible from certain regions.', modelUrl: 'path_to_solar_eclipse_model' }, { name: 'Planetary alignment', date: '2024-06-20', description: 'A solar eclipse will be visible from certain regions.', modelUrl: 'path_to_solar_eclipse_model' }, { name: 'Super Luna', date: '2024-06-20', description: 'A solar eclipse will be visible from certain regions.', modelUrl: 'path_to_solar_eclipse_model' },
+        { name: 'Comet', date: '2024-06-20', description: 'A comet will be visible from certain regions.', modelUrl: 'path_to_comet_model' },
+        { name: 'Planetary Alignment', date: '2024-06-20', description: 'Multiple planets will align.', modelUrl: 'path_to_planetary_alignment_model' },
+        { name: 'Super Luna', date: '2024-06-20', description: 'A super moon will be visible from certain regions.', modelUrl: 'path_to_super_luna_model' },
     ];
     
     const eventsList = document.getElementById('events-list');
@@ -21,9 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
             <h3>${event.name}</h3>
             <p>Date: ${event.date}</p>
             <button onclick="showEventDetails('${event.name}', '${event.date}', '${event.description}', '${event.modelUrl}')">View Details</button>
-               <button onclick="showEventDetails('${event.name}', '${event.date}', '${event.description}', '${event.modelUrl}')">Classification</button>
-
-         <button onclick="showEventDetails('${event.name}', '${event.date}', '${event.description}', '${event.modelUrl}')">VISUAL REPRESENTATION</button>
+            <button onclick="showEventDetails('${event.name}', '${event.date}', '${event.description}', '${event.modelUrl}')">Classification</button>
+            <button onclick="showEventDetails('${event.name}', '${event.date}', '${event.description}', '${event.modelUrl}')">Visual Representation</button>
         `;
         eventsList.appendChild(eventItem);
     });
@@ -50,27 +50,8 @@ function showEventDetails(name, date, description, modelUrl) {
     modalDate.innerText = `Date: ${date}`;
     modalDescription.innerText = description;
 
-    // Code to display the model using Three.js or another library goes here.
+    // Display the model using iframe or other method
+    modelViewer.innerHTML = `<iframe src="${modelUrl}" width="100%" height="250px"></iframe>`;
     
     modal.style.display = 'block';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

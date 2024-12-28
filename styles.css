@@ -1,4 +1,9 @@
 /* styles.css */
+
+*{
+margin: 0;
+    padding: 0;
+}
 body {
     font-family: Arial, sans-serif;
     background: none;
@@ -67,6 +72,8 @@ p {
     color: #ddd;
     margin-bottom: 20px;
 }
+
+
 
 @keyframes fadeInBackground {
     from {

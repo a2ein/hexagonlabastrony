@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const events = [
-        { name: 'Eclipse', date: '2024-04-15', description: 'Types of /n  solar eclipses: Total, Partial, Annular, Hybrid. Types of lunar eclipses: Total, Partial, Penumbral.', modelUrl: 'https://www.youtube.com/embed/cxrLRbkOwKs' },
+        { name: 'Eclipse', date: 'Event Name', description: 'Eclipse: Conditions:The Moon must be in its full phase.Earth, Sun, and Moon must align perfectly, which does/t happen monthly due to the Moons tilted orbit about 5 degrees. Types of Lunar Eclipses:Total Lunar Eclipse: Moon fully enters Earth/s umbra.Partial Lunar Eclipse:/ Only part of the Moon enters Earth/s umbra.Penumbral Eclipse:/ Moon passes through Earths penumbra, causing subtle shading.Eclipse Seasons: Occurs about twice a year when the Moons orbit crosses Earths orbital plane.Blood Moon: Occurs during a total lunar eclipse, where the Moon turns red due to Rayleigh Scattering.Upcoming Blood Moons:March 14, 2025: Not visible from Dhaka. Watch online.September 7-8, 2025: Visible from Dhaka at night.', modelUrl: 'https://www.youtube.com/embed/cxrLRbkOwKs' },
         { name: 'Meteor Shower', date: '2024-05-10', description: 'The annual meteor shower will reach its peak tonight.', modelUrl: 'path_to_meteor_shower_model' },
         { name: 'Comet', date: '2024-06-20', description: 'A comet will be visible from certain regions.', modelUrl: 'path_to_comet_model' },
         { name: 'Planetary Alignment', date: '2024-06-20', description: 'Multiple planets will align.', modelUrl: 'path_to_planetary_alignment_model' },
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         eventItem.innerHTML = `
             <h3>${event.name}</h3>
             <p>Date: ${event.date}</p>
-            <button onclick="showEventDetails('${event.name}', '${event.date}', '${event.description}', '${event.modelUrl}')">View Details</button>
+            <button onclick="showEventDetails('${event.name}', '${event.date}', '${event.description}')">View Details</button>
             <button onclick="showEventDetails('${event.name}', '${event.date}', '${event.description}', '${event.modelUrl}')">Classification</button>
             <button onclick="showEventDetails('${event.name}', '${event.date}', '${event.description}', '${event.modelUrl}')">Visual Representation</button>
         `;
@@ -46,12 +46,12 @@ function showEventDetails(name, date, description, modelUrl) {
     const modalDescription = document.getElementById('modal-description');
     const modelViewer = document.getElementById('model-viewer');
     
-    modalTitle.innerText = name;
-    modalDate.innerText = `Date: ${date}`;
-    modalDescription.innerText = description;
-
     // Display the model using iframe or other method
     modelViewer.innerHTML = `<iframe src="${modelUrl}" width="100%" height="240px"></iframe>`;
     
     modal.style.display = 'block';
+    modalTitle.innerText = name;
+    modalDate.innerText = `Date: ${date}`;
+    modalDescription.innerText = description;
+
 }

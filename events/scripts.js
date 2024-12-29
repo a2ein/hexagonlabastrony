@@ -46,7 +46,7 @@ function showEventDetails(name, date, description, modelUrl) {
     const modelViewer = document.getElementById('model-viewer');
     
     // Display the model using iframe
-    modelViewer.innerHTML = `<iframe width="853" height="480" src="${modelUrl}" title="${name}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    modelViewer.innerHTML = `<iframe width="853" height="480" src="https://www.youtube.com/embed/cxrLRbkOwKs" title="Solar Eclipse 101 | National Geographic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
     
     modal.style.display = 'block';
     modalTitle.innerText = name;

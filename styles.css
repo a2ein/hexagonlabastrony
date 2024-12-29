@@ -98,7 +98,8 @@ form {
     justify-content: center;
     align-items: center;
     margin: 20px;
-    color:yellow;
+    color:yellow; outline: none;
+    border: none;
 }
 
 label {
